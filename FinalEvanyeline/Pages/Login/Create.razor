@@ -1,0 +1,98 @@
+﻿@page "/Registro"
+
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+@inject UsuarioController usuariocontroler
+
+
+
+
+@inject IJSRuntime JSRuntime
+
+@using Microsoft.AspNetCore.Components.Forms
+
+
+@inject NavigationManager Nav
+
+
+<h1 style="color:green">Crear Usuario</h1>
+
+
+<br />
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="UsuarioModel" OnValidSubmit="@(() => ManejadorUpsert())">
+            <DataAnnotationsValidator />
+
+            <div class=" row">
+                <h5 class="control-lable col-md-2"> NOMBRE:</h5>
+                <InputText @bind-Value="UsuarioModel.nombre" class="form-control col-md-4 "></InputText>
+
+            </div>
+
+            <br />
+
+            <div class=" row">
+                <h5 class="control-lable col-md-2"> Email:</h5>
+                <InputText @bind-Value="UsuarioModel.Email" class="form-control col-md-4 "></InputText>
+
+
+            </div>
+
+            <br />
+
+            <div class="row">
+                <h5 class="control-lable col-md-2"> CLAVE:</h5>
+                <InputText type="password" @bind-Value="UsuarioModel.contrasena" class="form-control col-md-4 "></InputText>
+            </div>
+            <br />
+
+            <div class="row">
+                <h5 class="control-lable col-md-2"> ROL:</h5>
+                    <InputSelect @bind-Value="UsuarioModel.Role"  class="form-control col-md-4 ">
+                        <option selected>user</option>
+                    </InputSelect>
+            </div>
+
+            <br />
+            <div class="mb-3">
+
+                <button type="submit" class="btn btn-outline-success" href="/LoginApp"  @onclick=VolverA>Guardar</button>
+                <button type="button" class="btn btn-outline-danger m-3 " href="/LoginApp" @onclick=VolverA>Cancelar</button>
+            </div>
+
+        </EditForm>
+    </div>
+</div>
+
+
+@code {
+
+
+
+    //----------Objetos--------
+    private Usuario UsuarioModel = new Usuario();
+
+
+
+
+
+    private async Task ManejadorUpsert()
+    {
+
+
+        var respuestaCrear = await usuariocontroler.CrearUsuario(UsuarioModel);
+
+        Nav.NavigateTo("/LoginApp");
+
+
+    }
+
+    private void VolverA()
+    {
+        Nav.NavigateTo("/LoginApp");
+    }
+
+
+}

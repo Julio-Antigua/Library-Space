@@ -1,0 +1,198 @@
+﻿@page "/ComprarLibro"
+
+
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+@inject LibrosController librocontroler
+@inject AutoresController autorcontroler
+@inject VentasController ventascontroler
+@inject UsuarioController usuariocontroler
+
+
+@inject IJSRuntime JSRuntime
+
+@using Microsoft.AspNetCore.Components.Forms
+
+
+@inject NavigationManager Nav
+
+
+<h1 style="color:green">Comprar Libro</h1>
+
+
+<br />
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="VentasModel" OnValidSubmit="@(() => ManejadorUpsert())">
+            <DataAnnotationsValidator />
+
+
+
+            <div class="container">
+                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="control-lable"> Cantidad:</h5>
+
+                        <InputNumber @bind-Value="VentasModel.cantidad" class="form-control"></InputNumber>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="control-lable "> Libro:</h5>
+                        <InputSelect Value=" Convert.ToString(VentasModel.idlibro)" ValueChanged="@( (string b ) => VentasChange(b))"
+                                     ValueExpression="@( () =>Libro_Nombre)" class="form-control ">
+                            <option value="">--Seleccione el origen--</option>
+
+                            @if (ListaLibros.Count != 0)
+                            {
+                                @foreach (var a in ListaLibros)
+                                {
+                                    <option value="@a.idlibro">@a.nombre</option>
+                                }
+                            }
+                            else
+                            {
+                                <option value="0">Cargando...</option>
+                            }
+                        </InputSelect>
+                    </div>
+                </div>
+                <br />
+
+                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <h5 class="control-lable "> Precio Libro:</h5>
+                        <div>
+                            <p class="form-control " readonly>@Precio</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="control-lable1"> Total Pagar:</h5>
+                        <p class="form-control" readonly>@Total</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="control-lable "> Cliente:</h5>
+                        <InputText @bind-Value="VentasModel.nombreCliente" class="form-control "></InputText>
+                    </div>
+                </div>
+                <br />
+
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <h5 class="control-lable "> Tarjeta:</h5>
+                        <div class="form-group  mb-3">
+                            <div class="input-group">
+
+                                <div class="input-group-text bg-white">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <input type="text" maxlength="16" class="form-control" placeholder="0000-0000-0000-0000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="control-lable "> Fecha Expiracion:</h5>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-text bg-white">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <input type="text" maxlength="5" class="form-control" placeholder="MM/YY">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="control-lable "> CVV:</h5>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-text bg-white">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <input type="text" maxlength="3" class="form-control" placeholder="000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+
+                <button type="submit" class="btn btn-outline-success">Guardar</button>
+                <button type="button" class="btn btn-outline-danger m-3 " @onclick=VolverA>Cancelar</button>
+            </div>
+
+        </EditForm>
+    </div>
+</div>
+
+
+@code {
+
+
+
+
+
+
+    public int Precio;
+    public string Libro_Nombre;
+
+    public int Total;
+
+
+    private async Task VentasChange(string value)
+    {
+
+        //-------Mantiene el nombre Refrescado---------
+        VentasModel.idlibro = Convert.ToInt32(value);
+
+        var datoslibro = await librocontroler.ObtenerLibroPorId(VentasModel.idlibro);
+        Precio = Convert.ToInt32(datoslibro.precio);
+        Total = Precio * VentasModel.cantidad;
+
+
+
+    }
+
+    //---------Listas-------------
+    public List<Libros> ListaLibros = new List<Libros>();
+
+
+
+    //----------Objetos--------
+    private Ventas VentasModel = new Ventas();
+    private Libros LibroModel = new Libros();
+
+
+
+    //---------METODOS---------
+    protected override async Task OnInitializedAsync()
+    {
+
+        ListaLibros = await librocontroler.Get();
+
+    }
+
+    private async Task ManejadorUpsert()
+    {
+
+        VentasModel.total = Convert.ToDecimal(Total);
+        VentasModel.ventas_fecha = DateTime.Now;
+        var respuestaEditar = await ventascontroler.CrearVentas(VentasModel);
+
+        var a = await librocontroler.ObtenerLibroPorId(VentasModel.idlibro);
+        LibroModel.Cant_disponible = a.Cant_disponible - VentasModel.cantidad;
+        var update = await librocontroler.ActualizarCantidad(VentasModel.idlibro, LibroModel);
+        Nav.NavigateTo("/libros");
+
+
+    }
+
+    private void VolverA()
+    {
+        Nav.NavigateTo("/libros");
+    }
+
+
+}

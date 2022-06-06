@@ -1,0 +1,24 @@
+﻿@inject AuthenticationStateProvider authenticationStateProvider
+    @inject NavigationManager Nav
+    @using FinalEvanyeline.Pages.Login
+
+<AuthorizeView>
+    <Authorized>
+        <h7 class="text-danger">Bienvenido @context.User.Identity.Name</h7> &emsp; <a href="LoginApp" class="btn btn-outline-info" @onclick="LogOut">Login</a>
+    </Authorized>
+
+    <NotAuthorized>
+        <a href="LoginApp" class="btn btn-outline-danger">LogOut</a>
+    </NotAuthorized>
+</AuthorizeView>
+<a href="#" class="btn btn-outline-secondary" target="_blank">Help</a>
+
+    @code {
+
+
+        private void LogOut()
+        {
+            ((LocalAuthenticationStateProvider)authenticationStateProvider).MarkUserLogout();
+            Nav.NavigateTo("/LoginApp");
+        }
+    }

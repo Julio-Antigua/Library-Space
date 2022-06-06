@@ -1,0 +1,245 @@
+﻿@page "/admin"
+
+@using Blazored.Modal
+@using Blazored.Modal.Services
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+
+@inject AutoresController autorcontroler
+@inject UsuarioController usuariocontroler
+@inject VentasController ventascontroler
+@inject LibrosController librocontroler
+
+@inject IJSRuntime JSRuntime
+
+<h1 style="color:green"> Libros </h1>
+
+<br />
+<div class="row ml-1">
+    <a href="CreateLibro" class="btn btn-success"> Crear Libro </a>
+
+</div>
+<br />
+@if (ListaLibros == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Autor</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+
+                <th>Acciones</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var context in ListaLibros)
+            {
+                <tr>
+                    <td>@context.nombre</td>
+                    <td>@NombreAutor(ListaAutor, context.autor)</td>
+                    <td>@context.precio</td>
+                    <td>@context.Cant_disponible</td>
+
+                    <td>
+                        <a class="btn btn-info" href="EditarLibros/@context.idlibro" role="button">Editar</a>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<br />
+<hr style="color: #0056b2;" />
+
+
+
+
+
+<h1 style="color:green"> Autores </h1>
+
+<br />
+<div class="row ml-1">
+    <a href="CreateAutor" class="btn btn-success"> Crear Autor </a>
+
+</div>
+<br />
+@if (ListaAutor == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>ID_Autor</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var context in ListaAutor)
+            {
+                <tr>
+                    <td>@context.idAutor</td>
+                    <td>@context.nombre_autor</td>
+                    <td>@context.edad</td>
+                    <td>@context.estado</td>
+
+                    <td>
+                        <a class="btn btn-info" href="EditarAutor/@context.idAutor" role="button">Editar</a>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<br />
+
+
+
+
+
+<hr style="color: #0056b2;" />
+
+<h1 style="color:green"> Usuarios </h1>
+
+<br />
+<div class="row ml-1">
+    <a href="CreateUsuario" class="btn btn-success"> Crear Usuario</a>
+
+</div>
+<br />
+@if (ListaUsuario == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var context in ListaUsuario)
+            {
+                <tr>
+                    <td>@context.nombre</td>
+                    <td>@context.Email</td>
+                    <td>@context.Role</td>
+                    <td>
+                        <a class="btn btn-info" href="EditarUsuario/@context.idUsuario" role="button">Editar</a>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+<br />
+<hr style="color: #0056b2;" />
+
+<h1 style="color:green"> Ventas </h1>
+<br />
+<a href="FiltroVentas" class="btn btn-success"> Fitlros Ventas</a>
+
+<br />
+<br />
+@if (ListaVentas == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Libro</th>
+                <th>Comprador</th>
+                <th>Total</th>
+                <th>Cantidad</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var context in ListaVentas)
+            {
+                <tr>
+                    <td>@NombreLibro(ListaLibros, context.idlibro)</td>
+                    <td>@context.nombreCliente</td>
+                    <td>@context.total</td>
+                    <td>@context.cantidad</td>
+                    <td>@context.ventas_fecha</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+
+    public List<Autores> ListaAutor = new List<Autores>();
+
+    public List<Libros> ListaLibros = new List<Libros>();
+    public List<Usuario> ListaUsuario = new List<Usuario>();
+    public List<Ventas> ListaVentas = new List<Ventas>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListaLibros = await librocontroler.Get();
+        ListaAutor = await autorcontroler.Get();
+        ListaUsuario = await usuariocontroler.Get();
+        ListaVentas = await ventascontroler.Get();
+    }
+
+    private string NombreAutor(List<Autores> lista, int id)
+    {
+        foreach (Autores a in lista)
+        {
+            if (a.idAutor == id)
+            {
+                return a.nombre_autor;
+            }
+        }
+        return null;
+    }
+
+    private string NombreLibro(List<Libros> lista, int id)
+    {
+        foreach (Libros a in lista)
+        {
+            if (a.idlibro == id)
+            {
+                return a.nombre;
+            }
+        }
+        return null;
+    }
+}

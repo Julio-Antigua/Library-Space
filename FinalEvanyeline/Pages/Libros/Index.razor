@@ -1,0 +1,131 @@
+﻿@page "/libros"
+
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+
+@inject AutoresController autorcontroler
+
+@inject LibrosController librocontroler
+
+@inject IJSRuntime JSRuntime
+
+<h1 style="color:green"> Lista De Libros </h1>
+<hr style="color: #0056b2;" />
+
+<br />
+<div class="row ml-1">
+    <a href="ComprarLibro" class="btn btn-info ml-3"> Comprar</a>
+
+</div>
+<br />
+@if (ListaLibros == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Autor</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Editorial</th>
+                <th>Genero</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var context in ListaLibros)
+            {
+                <tr>
+                    <td>@context.nombre</td>
+                    <td>@NombreAutor(ListaAutor, context.autor)</td>
+                    <td>@context.precio</td>
+                    <td>@context.Cant_disponible</td>
+                    <td>@context.editorial</td>
+                    <td>@context.genero</td>
+                    <td>
+                        <i class="btn btn-success text-light fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#miModal"></i>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Informacion</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div Model="LibrosModel" style="font-size: 15px" class="col-sm-7 mt-4">
+                            <ul>
+                                <li> <span><strong>Libro:</strong>La manosa</span></li>
+                                <li> <span><strong>Autor:</strong> Juan Bosch</span></li>
+                                <li> <span><strong>Precio:</strong> 1500 $DOM</span></li>
+                                <li> <span><strong>Editorial:</strong> Dist.Libros Juan Bo</span></li>
+                                <li> <span><strong>Genero:</strong> Epico Narrativo</span></li>
+                                <li> <span><strong>Paginas:</strong> 210</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5">
+
+
+                            <img src="https://www.cuestalibros.com/content/images/thumbs/0000133_6001828-h.jpg_550.jpeg" width="140px" height="190px" alt="Alternate Text" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class=" btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+
+
+    public List<Autores> ListaAutor = new List<Autores>();
+
+
+
+    public List<Libros> ListaLibros = new List<Libros>();
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListaLibros = await librocontroler.Get();
+
+        ListaAutor = await autorcontroler.Get();
+
+    }
+
+    private Libros LibrosModel = new Libros();
+
+
+
+
+    private string NombreAutor(List<Autores> lista, int id)
+    {
+        foreach (Autores a in lista)
+        {
+            if (a.idAutor == id)
+            {
+                return a.nombre_autor;
+            }
+        }
+        return null;
+    }
+}

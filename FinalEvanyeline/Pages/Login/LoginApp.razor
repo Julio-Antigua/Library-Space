@@ -1,0 +1,128 @@
+﻿@page "/LoginApp"
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+
+@using System.Security.Claims;
+
+@inject UsuarioController controlador
+@inject AuthenticationStateProvider authenticationStateProvider
+@inject NavigationManager Nav
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+
+
+@using Microsoft.AspNetCore.Components.Forms
+
+<center>
+    <div>
+        <br /> <br /><br /><br />
+    </div>
+
+    <div class="col-8 card">
+        <div class="col-12  row">
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="col-12 row">
+            <div class="col-6" style="border-right:groove">
+                <img src="https://thumbs.dreamstime.com/b/logo-del-libro-de-mano-con-estrellas-archivo-vector-incluido-173431249.jpg" width="400" height="400" />
+            </div>
+
+
+            <div class="col-6" style="border-left:thick">
+                <EditForm Model="_userinfo" OnValidSubmit="@ValidarUsuario">
+                    <br />
+                    <div class="col-12 row">
+                        <div class="col-12 row" style="text-align:center">
+                            <p class="col-12" style="color:red">@LoginMensaje</p>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div>
+                        <h2 class="bg-transparent border-primary text-success"><strong>Library</strong> <span class="text-primary"><strong>Space</strong></span></h2>
+                    </div>
+
+                    <div>
+                        <br />
+                    </div>
+
+                    <div class="col-12 row">
+                        <input class="form-control col-12" @bind="_userinfo.Email" placeholder="Email" type="email" required />
+                    </div>
+
+                    <br />
+
+                    <div class="col-12 row">
+                        <input class="form-control col-12" type="password" @bind="_userinfo.Passoword" placeholder="Password" required />
+                    </div>
+                    <br />
+                    <div class="col-12 row">
+                        <a href="/Registro">Registrate aqui!</a>
+                    </div>
+                        <br />
+                        <br />
+
+                        <div class="col-12 row">
+                            <button type="submit" class="form-control col-12 btn btn-primary" style="background-color:dodgerblue;color:white">Login</button>
+                        </div>
+
+                </EditForm>
+            </div>
+        </div>
+    </div>
+
+</center>
+
+@code {
+
+
+    ////////////VARIABLES//////
+    public List<Usuario> ExisteUsuario = new List<Usuario>();
+    public string LoginMensaje { get; set; }
+
+
+    ////////OBJETOS///////////
+    private UserInfo _userinfo;
+
+    private Usuario _Usuario;
+
+
+    ////////METODOS///////////////
+    protected override Task OnInitializedAsync()
+    {
+        _userinfo = new UserInfo();
+        return base.OnInitializedAsync();
+    }
+    private async Task<bool> ValidarUsuario()
+    {
+        try
+        {
+            LoginMensaje = "";
+            ExisteUsuario = await controlador.ValidarUsuarioLogin(_userinfo);
+
+            if (ExisteUsuario.Count != 0)
+            {
+
+                ((LocalAuthenticationStateProvider)authenticationStateProvider).MarkUserAuthenticaded(ExisteUsuario[0]);
+                Nav.NavigateTo("/");
+                await sessionStorage.SetItemAsync("usuario", _Usuario);
+                return await Task.FromResult(true);
+            }
+            else
+            {
+                LoginMensaje = "Datos invalidos, favor verificar nuevamente";
+                return await Task.FromResult(false);
+            }
+        }
+        catch (Exception e)
+        {
+
+            return await Task.FromResult(false);
+        }
+
+
+
+    }
+
+
+}

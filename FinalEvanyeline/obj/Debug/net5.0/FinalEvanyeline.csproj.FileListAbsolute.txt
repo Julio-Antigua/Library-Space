@@ -1,0 +1,249 @@
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.AssemblyInfoInputs.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.AssemblyInfo.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.csproj.CoreCompileInputs.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorComponent.input.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorComponent.output.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\appsettings.json
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.StaticWebAssets.xml
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.exe
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.deps.json
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.runtimeconfig.json
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.runtimeconfig.dev.json
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\ref\FinalEvanyeline.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.Views.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.Views.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Blazored.SessionStorage.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\BlazorInputFile.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.JSInterop.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Libros\Index.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\FinalEvanyeline.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.TagHelpers.input.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.TagHelpers.output.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorCoreGenerate.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Libros\Index.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorAssemblyInfo.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorAssemblyInfo.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\staticwebassets\FinalEvanyeline.StaticWebAssets.Manifest.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\staticwebassets\FinalEvanyeline.StaticWebAssets.xml
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\bundle\FinalEvanyeline.styles.css
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\projectbundle\FinalEvanyeline.bundle.scp.css
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorTargetAssemblyInfo.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorTargetAssemblyInfo.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.Views.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.csproj.CopyComplete
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\ref\FinalEvanyeline.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.pdb
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.genruntimeconfig.cache
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Libros\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Libros\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Libros\Editar.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Libros\Editar.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Autores\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Autores\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Autores\Editar.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Autores\Editar.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Ventas\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Ventas\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Login\LoginApp.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Login\RedirectLogin.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Shared\UseState.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Login\LoginApp.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Login\RedirectLogin.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Shared\UseState.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Admin\Index.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Admin\Index.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Usuarios\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Usuarios\Create.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Usuarios\Editar.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Usuarios\Editar.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Blazored.Modal.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Ventas\Index.razor.g.cs
+C:\Users\Pasante Scada\source\repos\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Ventas\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\appsettings.json
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.StaticWebAssets.xml
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.exe
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.deps.json
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.runtimeconfig.json
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.runtimeconfig.dev.json
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\ref\FinalEvanyeline.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.Views.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\FinalEvanyeline.Views.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Blazored.Modal.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Blazored.SessionStorage.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\BlazorInputFile.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.JSInterop.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.csproj.AssemblyReference.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.AssemblyInfoInputs.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.AssemblyInfo.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorComponent.input.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Admin\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Autores\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Autores\Editar.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Libros\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Libros\Editar.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Libros\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Login\LoginApp.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Login\RedirectLogin.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Usuarios\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Usuarios\Editar.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Ventas\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Ventas\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Shared\UseState.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorComponent.output.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\FinalEvanyeline.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.TagHelpers.input.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.TagHelpers.output.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorCoreGenerate.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Admin\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Autores\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Autores\Editar.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Libros\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Libros\Editar.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Libros\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Login\LoginApp.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Login\RedirectLogin.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Usuarios\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Usuarios\Editar.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Ventas\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Ventas\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Shared\UseState.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorAssemblyInfo.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorAssemblyInfo.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\bundle\FinalEvanyeline.styles.css
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\scopedcss\projectbundle\FinalEvanyeline.bundle.scp.css
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\staticwebassets\FinalEvanyeline.StaticWebAssets.Manifest.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\staticwebassets\FinalEvanyeline.StaticWebAssets.xml
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorTargetAssemblyInfo.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.RazorTargetAssemblyInfo.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.Views.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.csproj.CopyComplete
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\ref\FinalEvanyeline.dll
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.pdb
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\FinalEvanyeline.genruntimeconfig.cache
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Autores\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Autores\Index.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Index - Copia.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Index - Copia.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\RazorDeclaration\Pages\Login\Create.razor.g.cs
+C:\Users\Administrador\Downloads\FinalEvanyeline\FinalEvanyeline\FinalEvanyeline\obj\Debug\net5.0\Razor\Pages\Login\Create.razor.g.cs

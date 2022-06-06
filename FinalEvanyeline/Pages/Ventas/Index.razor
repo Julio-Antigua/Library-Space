@@ -1,0 +1,227 @@
+﻿@page "/FiltroVentas"
+
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+
+@inject VentasController ventascontroler
+@inject LibrosController librocontroler
+
+
+@inject IJSRuntime JSRuntime
+
+<h1 style="color:green"> Libros </h1>
+<hr style="color: #0056b2;" />
+
+<br />
+
+<EditForm Model="ventasmodel" OnValidSubmit="@(() => FiltrosUpsert())">
+    <div class="form-inline">
+        <b><label class="control-lable">FILTRAR POR:</label></b>
+        <InputSelect Value="@RespuestaSelect" ValueChanged="@( (string b ) => OnCHange(b))"
+                     ValueExpression="@( () =>RespuestaSelect)" class="form-control col-md-4" style="margin-left:5px">
+            <option>--Seleccione--</option>
+            <option value="1">Libros por Dia</option>
+            <option value="2">Libros Disponibles</option>
+
+
+
+        </InputSelect>
+
+    </div>
+    <br />
+    @if (FiltroporDia == true)
+    {
+        <div class="form-inline">
+
+            <label class="control-lable ">FECHA: </label>
+            <InputDate @bind-Value="@FechaporDia" class="form-control col-md-4" style="margin-left:5px"></InputDate>
+        </div>
+    }
+
+    <br />
+    <div class="mb-3">
+
+        <button type="submit" class="btn btn-outline-success">Buscar</button>
+        @*<button type="button" class="btn btn-outline-danger m-3 " @onclick=VolverA>Cancelar</button>*@
+    </div>
+    <br />
+</EditForm>
+<br />
+
+
+@if (ResultadosFiltro == true)
+{
+
+    @if (ListaResultado == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Libro</th>
+                    <th>Comprador</th>
+                    <th>Total</th>
+                    <th>Cantidad</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var context in ListaResultado)
+                {
+                    <tr>
+                        <td>@NombreLibro(ListaLibros, context.idlibro)</td>
+                        <td>@context.nombreCliente</td>
+                        <td>@context.total</td>
+                        <td>@context.cantidad</td>
+                        <td>@context.ventas_fecha</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+}
+
+
+@if (ResultadosFiltro == true)
+{
+
+    @if (ListaResultado == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre Libro</th>
+                    <th>Autor</th>
+                    <th>Cantidad</th>
+                    <th>Editorial</th>
+                    <th>Genero</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var context in ListaResultadoDisponible)
+                {
+                    <tr>
+                        <td>@context.nombre</td>
+                        <td>@context.autor</td>
+                        <td>@context.Cant_disponible</td>
+                        <td>@context.editorial</td>
+                        <td>@context.genero</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+}
+<br />
+@if (FiltroporDia == true)
+{
+    <p>Total de libros vendidos en el dia : <p style="color:red">@ListaResultado.Count()</p></p>
+
+}
+
+@code {
+    public bool FiltroporDia = false;
+    public bool FiltroDisponible = false;
+
+
+
+    public bool ResultadosFiltro = false;
+    public string RespuestaSelect;
+
+    public DateTime FechaporDia = DateTime.Today;
+
+    public Ventas ventasmodel = new Ventas();
+    public List<Libros> ListaLibros = new List<Libros>();
+
+
+    public List<Ventas> ListaResultado = new List<Ventas>();
+    public List<Libros> ListaResultadoDisponible = new List<Libros>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListaLibros = await librocontroler.Get();
+        //ListaAutor = await autorcontroler.Get();
+
+    }
+
+    private string NombreAutor(List<Autores> lista, int id)
+    {
+        foreach (Autores a in lista)
+        {
+            if (a.idAutor == id)
+            {
+                return a.nombre_autor;
+            }
+        }
+        return null;
+    }
+
+    private string NombreLibro(List<Libros> lista, int id)
+    {
+        foreach (Libros a in lista)
+        {
+            if (a.idlibro == id)
+            {
+                return a.nombre;
+            }
+        }
+        return null;
+    }
+
+    private async Task OnCHange(string value)
+    {
+
+        //-------Mantiene el nombre Refrescado---------
+        RespuestaSelect = value;
+
+        if (value == "1")
+        {
+            ResultadosFiltro = false;
+            FiltroporDia = true;
+
+
+        }
+        if (value == "2")
+        {
+            ResultadosFiltro = false;
+
+            FiltroporDia = false;
+            FiltroDisponible = true;
+        }
+
+    }
+
+    private async Task FiltrosUpsert()
+    {
+
+        if (FiltroporDia == true)
+        {
+            ListaResultado = await ventascontroler.FiltroporFecha(FechaporDia);
+            ResultadosFiltro = true;
+
+        }
+        if (FiltroDisponible == true)
+        {
+            ListaResultadoDisponible = await librocontroler.FiltroporDisponibilidad();
+            ResultadosFiltro = true;
+
+        }
+
+
+
+
+
+    }
+
+}

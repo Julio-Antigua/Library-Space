@@ -1,0 +1,174 @@
+﻿@page "/EditarAutor/{id:int}"
+
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+@inject AutoresController autorescontroler
+
+
+
+@inject IJSRuntime JSRuntime
+
+@using Microsoft.AspNetCore.Components.Forms
+
+
+@inject NavigationManager Nav
+
+
+<h1 style="color:green">Crear Autor</h1>
+
+
+<br />
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="AutoresModel" OnValidSubmit="@(() => ManejadorUpsert())">
+            <DataAnnotationsValidator />
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Nombre:</label>
+                <InputText @bind-Value="AutoresModel.nombre_autor" class="form-control col-md-4 "></InputText>
+
+            </div>
+            <br />
+
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Apellido:</label>
+                <InputText @bind-Value="AutoresModel.apellido_autor" class="form-control col-md-4 "></InputText>
+
+            </div>
+
+            <br />
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Edad:</label>
+                <InputNumber @bind-Value="AutoresModel.edad" class="form-control col-md-4 "></InputNumber>
+            </div>
+
+            <br />
+
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Nacionalidad:</label>
+                <InputText @bind-Value="AutoresModel.nacionalidad" class="form-control col-md-4 "></InputText>
+
+            </div>
+            <br />
+
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Nacimiento:</label>
+                <InputDate @bind-Value="AutoresModel.nacimiento" class="form-control col-md-4 "></InputDate>
+
+            </div>
+            <br />
+
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Muerte:</label>
+                <InputDate @bind-Value="AutoresModel.muerte" class="form-control col-md-4 "></InputDate>
+
+            </div>
+
+            <br />
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Estado:</label>
+                <InputText @bind-Value="AutoresModel.estado" class="form-control col-md-4 "></InputText>
+
+
+            </div>
+            <br />
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Libros Escritos:</label>
+                <InputNumber @bind-Value="AutoresModel.libros_escritos" class="form-control col-md-4 "></InputNumber>
+
+
+            </div>
+
+            <br />
+            <div class="row">
+                <label class="control-lable col-md-2"> Foto:</label>
+                <input type="file" class="form-control col-md-4 " />
+            </div>
+
+            <br />
+            <div class="mb-3">
+
+                <button type="submit" class="btn btn-outline-success">Guardar</button>
+                <button type="button" class="btn btn-outline-danger m-3 " @onclick=VolverA>Cancelar</button>
+            </div>
+
+        </EditForm>
+    </div>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public int id { get; set; }
+
+    //private async Task IngChange(string value)
+    //{
+
+    //    //-------Mantiene el nombre Refrescado---------
+    //    NotasModel.Ingeniero_id = Convert.ToInt32(value);
+
+
+    //}
+    //private async Task SubChange(string value)
+    //{
+
+    //    //-------Mantiene el nombre Refrescado---------
+    //    NotasModel.SubSistema_id = value;
+
+
+    //}
+    //private async Task RengChange(string value)
+    //{
+
+    //    //-------Mantiene el nombre Refrescado---------
+    //    NotasModel.RenglonNota_id = Convert.ToByte(value);
+
+
+    //}
+
+
+
+
+    //---------Listas-------------
+
+
+
+    //----------Objetos--------
+    private Autores AutoresModel = new Autores();
+
+
+
+    //---------METODOS---------
+    protected override async Task OnInitializedAsync()
+    {
+
+        AutoresModel = await autorescontroler.ObtenerAutorPorId(id);
+    }
+
+    private async Task ManejadorUpsert()
+    {
+
+
+        var respuestaEditar = await autorescontroler.Actualizar(id,AutoresModel);
+
+        Nav.NavigateTo("/admin");
+
+
+    }
+
+    private void VolverA()
+    {
+        Nav.NavigateTo("/admin");
+    }
+
+
+}

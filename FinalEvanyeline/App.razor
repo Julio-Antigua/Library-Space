@@ -1,0 +1,29 @@
+@using Microsoft.AspNetCore.Components.Authorization
+@using FinalEvanyeline.Pages.Login
+
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+            <NotAuthorized>
+                <RedirectLogin />
+            </NotAuthorized>
+
+            <Authorizing>
+                <text>Autorizando...Por favor espere.</text>
+            </Authorizing>
+
+        </AuthorizeRouteView>
+    </Found>
+
+
+    <NotFound>
+        <CascadingAuthenticationState>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p>Esta URL no tiene contenido para mostrar.</p>
+            </LayoutView>
+        </CascadingAuthenticationState>
+
+    </NotFound>
+</Router>
+

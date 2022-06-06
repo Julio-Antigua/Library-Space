@@ -1,0 +1,126 @@
+﻿@page "/autores"
+
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+
+@inject AutoresController autorcontroler
+
+@inject LibrosController librocontroler
+
+@inject IJSRuntime JSRuntime
+
+<h1 style="color:green"> Lista De Autores </h1>
+<hr style="color: #0056b2;" />
+<br />
+
+<br />
+@if (ListaAutor == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Estado</th>
+                <th>Nacionalidad</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var context in ListaAutor)
+            {
+                <tr>
+                    <td>@context.nombre_autor</td>
+                    <td>@context.apellido_autor</td>
+                    <td>@context.edad</td>
+                    <td>@context.estado</td>
+                    <td>@context.nacionalidad</td>
+                    <td>
+                        <i class="btn btn-success text-light fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#miModal"></i>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Informacion</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div Model="LibrosModel" style="font-size: 15px" class="col-sm-7 mt-4">
+                            <ul>
+                                <li> <span><strong>Nombre:</strong> Juan Emilio Bosch Gaviño</span></li>
+                                <li> <span><strong>Edad:</strong> 92</span></li>
+                                <li> <span><strong>Estado:</strong> Muerto</span></li>
+                                <li> <span><strong>Nacimiento:</strong> 30-06-1909</span></li>
+                                <li> <span><strong>Nacionalidad:</strong> Dominicano</span></li>
+                                <li> <span><strong>Muerte:</strong> 01-11-2001</span></li>
+                                <li> <span><strong>Libros Escritos:</strong> 20</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5">
+
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Juan_Bosch_%281963%29.jpg" width="140px" height="190px" alt="Alternate Text" />
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class=" btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+
+
+    public List<Autores> ListaAutor = new List<Autores>();
+
+
+    public List<Libros> ListaLibros = new List<Libros>();
+
+
+
+    [Parameter]
+    public int id { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListaLibros = await librocontroler.Get();
+        ListaAutor = await autorcontroler.Get();
+
+    }
+
+    private Libros LibrosModel = new Libros();
+
+
+
+
+    private string NombreAutor(List<Autores> lista, int id)
+    {
+        foreach (Autores a in lista)
+        {
+            if (a.idAutor == id)
+            {
+                return a.nombre_autor;
+            }
+        }
+        return null;
+    }
+}

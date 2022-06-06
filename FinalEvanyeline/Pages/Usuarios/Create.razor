@@ -1,0 +1,96 @@
+﻿@page "/CreateUsuario"
+
+
+@using FinalEvanyeline.Data
+@using FinalEvanyeline.Models
+@inject UsuarioController usuariocontroler
+
+
+
+
+@inject IJSRuntime JSRuntime
+
+@using Microsoft.AspNetCore.Components.Forms
+
+
+@inject NavigationManager Nav
+
+
+<h1 style="color:green">Crear Usuario</h1>
+
+
+<br />
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="UsuarioModel" OnValidSubmit="@(() => ManejadorUpsert())">
+            <DataAnnotationsValidator />
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> NOMBRE:</label>
+                <InputText @bind-Value="UsuarioModel.nombre" class="form-control col-md-4 "></InputText>
+
+            </div>
+
+            <br />
+
+            <div class=" row">
+                <label class="control-lable col-md-2"> Email:</label>
+                <InputText @bind-Value="UsuarioModel.Email" class="form-control col-md-4 "></InputText>
+
+
+            </div>
+
+            <br />
+
+            <div class="row">
+                <label class="control-lable col-md-2"> CLAVE:</label>
+                <InputText type="password" @bind-Value="UsuarioModel.contrasena" class="form-control col-md-4 "></InputText>
+            </div>
+            <br />
+
+            <div class="row">
+                <label class="control-lable col-md-2"> ROL:</label>
+                <InputText @bind-Value="UsuarioModel.Role" class="form-control col-md-4 "></InputText>
+            </div>
+
+            <br />
+            <div class="mb-3">
+
+                <button type="submit" class="btn btn-outline-success">Guardar</button>
+                <button type="button" class="btn btn-outline-danger m-3 " @onclick=VolverA>Cancelar</button>
+            </div>
+
+        </EditForm>
+    </div>
+</div>
+
+
+@code {
+
+
+
+    //----------Objetos--------
+    private Usuario UsuarioModel = new Usuario();
+
+
+
+   
+
+    private async Task ManejadorUpsert()
+    {
+
+
+        var respuestaCrear = await usuariocontroler.CrearUsuario(UsuarioModel);
+
+        Nav.NavigateTo("/admin");
+
+
+    }
+
+    private void VolverA()
+    {
+        Nav.NavigateTo("/admin");
+    }
+
+
+}
